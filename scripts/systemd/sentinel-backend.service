@@ -1,0 +1,18 @@
+[Unit]
+Description=SentinelAI REST API Service on IBM LinuxONE
+After=network.target
+
+[Service]
+Type=simple
+User=linux1
+WorkingDirectory=/home/linux1/ibmz
+Environment="PATH=/home/linux1/ibmz/.venv/bin:/usr/local/bin:/usr/bin"
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/home/linux1/ibmz/.venv/bin/python -m uvicorn sentinel.api.app:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=5s
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
