@@ -1,0 +1,28 @@
+{
+  "matched_incidents": 11,
+  "matched_baseline_lead_min": 29.90909090909091,
+  "matched_compound_lead_min": 11.909090909090908,
+  "incidents_missed_by_baseline_caught_by_compound": 6,
+  "n_episodes": 60,
+  "n_incident_episodes": 17,
+  "n_safe_episodes": 25,
+  "n_nearmiss_episodes": 18,
+  "baseline_nearmiss_warning_rate": 0.6666666666666666,
+  "compound_nearmiss_warning_rate": 0.5,
+  "baseline_detection_rate": 0.6470588235294118,
+  "compound_detection_rate": 1.0,
+  "baseline_false_negative_rate": 0.3529411764705882,
+  "compound_false_negative_rate": 0.0,
+  "baseline_mean_lead_min": 29.90909090909091,
+  "compound_mean_lead_min": 11.0,
+  "baseline_false_alarm_rate": 0.32,
+  "compound_false_alarm_rate": 0.0,
+  "baseline_nuisance_minutes": 20,
+  "compound_nuisance_minutes": 0,
+  "gas_monotonicity_verified": true,
+  "horizons": [
+    15,
+    30,
+    60
+  ]
+}
